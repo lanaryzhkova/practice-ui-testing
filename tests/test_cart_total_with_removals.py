@@ -1,6 +1,5 @@
 import random
 
-from data.data import BASE_URL
 from pages.cart_page.cart_page import CartPage
 from pages.main_page.main_page import MainPage
 from pages.product_page.product_page import ProductPage
