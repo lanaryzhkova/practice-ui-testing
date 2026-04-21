@@ -9,8 +9,10 @@ from pages.cart_page.steps import Steps as CartSteps
 
 import allure
 
-@allure.feature("Проверка поисковой выдачи и корзины")
-@allure.story("")
+@allure.parent_suite("UI-тесты")
+@allure.feature("Расчёт итоговой суммы корзины")
+@allure.story("Расчёт итоговой суммы корзины")
+@allure.title("Должна корректно пересчитываться итоговая сумма после удаления товаров из корзины")
 
 def test_cart_total_with_removals(driver):
     main_page = MainPage(driver)

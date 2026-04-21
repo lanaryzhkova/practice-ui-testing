@@ -2,9 +2,10 @@ from pages.main_page.main_page import MainPage
 from pages.main_page.steps import Steps
 import allure
 
-
+@allure.parent_suite("UI-тесты")
 @allure.feature("Сортировка товаров")
 @allure.story("Сортировка товаров по имени и цене")
+@allure.title("Должна корректно работать сортировка товаров по имени и цене в обоих направлениях")
 
 def test_sorting_by_name(driver):
     main_page = MainPage(driver)

@@ -9,9 +9,10 @@ import allure
 
 from pages.product_page.product_page import ProductPage
 
-
-@allure.feature("Проверка поисковой выдачи и корзины")
-@allure.story("")
+@allure.parent_suite("UI-тесты")
+@allure.feature("Поиск товаров и работа с корзиной")
+@allure.story("Поиск товаров, добавление в корзину и проверка итоговой суммы")
+@allure.title("Должна корректно формироваться корзина и рассчитываться итоговая сумма после поиска и изменения количества товаров")
 
 def test_cart_total_with_search(driver):
     main_page = MainPage(driver)
