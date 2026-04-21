@@ -110,4 +110,3 @@ class CartPage(BasePage):
                 break
             products[i + 1].find_element(*self.remove_product_button).click()
             i += 1                          
-    
