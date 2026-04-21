@@ -36,3 +36,13 @@ class Steps:
             product_name = cart_page.get_product_name(product)
             product_names.append(product_name)
         return product_names
+    
+    @allure.step("Проверка наличия продукта по имени в корзине")
+    def check_product_by_name(self, cart_page, product_name):
+        products = cart_page.get_all_products_in_cart()
+        print(f"Проверяем наличие продукта '{product_name}' в корзине...")
+        for product in products:
+            name = cart_page.get_product_name(product).lower()
+            if product_name in name:
+                return True
+        return False
