@@ -36,6 +36,8 @@ def test_cart_total_with_removals(driver):
         product_steps.set_product_quantity(product_page, random_quantity)
         product_steps.add_product_to_cart(product_page)
 
+        cart_page.load()
+        
         assert cart_steps.check_product_by_name(cart_page, products[random_product_position].lower()), f"Продукт {products[random_product_position]} не добавлен в корзину"
 
     products_list_before_removal = cart_steps.get_all_product_names(cart_page)
