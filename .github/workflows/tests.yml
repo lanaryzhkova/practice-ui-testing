@@ -2,7 +2,7 @@ name: Run Tests and Publish Allure Report
 
 on:
   push:
-    branches: [ main ]
+    branches: [ homework ]
   pull_request:
 
 jobs:
