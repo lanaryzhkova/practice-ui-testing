@@ -5,6 +5,9 @@ on:
     branches: [ homework ]
   pull_request:
 
+permissions:
+  contents: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
