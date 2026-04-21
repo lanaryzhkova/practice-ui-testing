@@ -27,3 +27,12 @@ class Steps:
     @allure.step("Получение списка всех продуктов в корзине")
     def get_all_products(self, cart_page):
         return cart_page.get_all_products_in_cart()
+    
+    @allure.step("Получение списка всех названий продуктов в корзине")
+    def get_all_product_names(self, cart_page):
+        products = cart_page.get_all_products_in_cart()
+        product_names = []
+        for product in products:
+            product_name = cart_page.get_product_name(product)
+            product_names.append(product_name)
+        return product_names
