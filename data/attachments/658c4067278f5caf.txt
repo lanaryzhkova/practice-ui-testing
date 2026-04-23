@@ -1,0 +1,17 @@
+INFO     pages.cart_page:cart_page.py:46 Загружена страница https://automationteststore.com/index.php?rt=checkout/cart
+INFO     pages.cart_page:cart_page.py:177 Продукт benefit bella bamba успешно добавлен в корзину
+INFO     pages.cart_page:cart_page.py:46 Загружена страница https://automationteststore.com/index.php?rt=checkout/cart
+INFO     pages.cart_page:cart_page.py:177 Продукт benefit bella bamba успешно добавлен в корзину
+INFO     pages.cart_page:cart_page.py:46 Загружена страница https://automationteststore.com/index.php?rt=checkout/cart
+INFO     pages.cart_page:cart_page.py:177 Продукт tropiques minerale loose bronzer
+- color natural ambre успешно добавлен в корзину
+INFO     pages.cart_page:cart_page.py:46 Загружена страница https://automationteststore.com/index.php?rt=checkout/cart
+INFO     pages.cart_page:cart_page.py:177 Продукт benefit bella bamba успешно добавлен в корзину
+INFO     pages.cart_page:cart_page.py:46 Загружена страница https://automationteststore.com/index.php?rt=checkout/cart
+INFO     pages.cart_page:cart_page.py:177 Продукт benefit girl meets pearl успешно добавлен в корзину
+INFO     pages.cart_page:cart_page.py:46 Загружена страница https://automationteststore.com/index.php?rt=checkout/cart
+INFO     pages.cart_page:cart_page.py:147 Сейчас в корзине товары: [<selenium.webdriver.remote.webelement.WebElement (session="8739d2a3c80c60d483d86dd9988549bc", element="f.63145339399E2E934C743264186492AA.d.EC54A2144E0C6D6E48DEA01D69FDABB7.e.1074")>, <selenium.webdriver.remote.webelement.WebElement (session="8739d2a3c80c60d483d86dd9988549bc", element="f.63145339399E2E934C743264186492AA.d.EC54A2144E0C6D6E48DEA01D69FDABB7.e.1075")>, <selenium.webdriver.remote.webelement.WebElement (session="8739d2a3c80c60d483d86dd9988549bc", element="f.63145339399E2E934C743264186492AA.d.EC54A2144E0C6D6E48DEA01D69FDABB7.e.1076")>]
+INFO     pages.cart_page:cart_page.py:158 Удалён продукт Tropiques Minerale Loose Bronzer
+- Color Natural Ambre
+INFO     pages.cart_page:cart_page.py:186 Ожидаемая итоговая сумма: 609.0 
+INFO     pages.cart_page:cart_page.py:188 Фактическая итоговая сумма: 609.0

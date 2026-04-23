@@ -1,0 +1,1 @@
+INFO     pages.main_page:main_page.py:57 Выбрана категория FRAGRANCE

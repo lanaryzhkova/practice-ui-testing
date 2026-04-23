@@ -1,0 +1,17 @@
+INFO     pages.cart_page:cart_page.py:46 Загружена страница https://automationteststore.com/index.php?rt=checkout/cart
+INFO     pages.cart_page:cart_page.py:177 Продукт acqua di gio pour homme
+- fragrance size 1.7 oz успешно добавлен в корзину
+INFO     pages.cart_page:cart_page.py:46 Загружена страница https://automationteststore.com/index.php?rt=checkout/cart
+INFO     pages.cart_page:cart_page.py:177 Продукт benefit girl meets pearl успешно добавлен в корзину
+INFO     pages.cart_page:cart_page.py:46 Загружена страница https://automationteststore.com/index.php?rt=checkout/cart
+INFO     pages.cart_page:cart_page.py:177 Продукт absolue eye precious cells успешно добавлен в корзину
+INFO     pages.cart_page:cart_page.py:46 Загружена страница https://automationteststore.com/index.php?rt=checkout/cart
+INFO     pages.cart_page:cart_page.py:177 Продукт flash bronzer body gel успешно добавлен в корзину
+INFO     pages.cart_page:cart_page.py:46 Загружена страница https://automationteststore.com/index.php?rt=checkout/cart
+INFO     pages.cart_page:cart_page.py:177 Продукт skinsheen bronzer stick успешно добавлен в корзину
+INFO     pages.cart_page:cart_page.py:46 Загружена страница https://automationteststore.com/index.php?rt=checkout/cart
+INFO     pages.cart_page:cart_page.py:147 Сейчас в корзине товары: [<selenium.webdriver.remote.webelement.WebElement (session="64ed643e7238b84373cbe15434fea857", element="f.E85BC0BF6EF7962781DE8D1D691EECEC.d.AA5202AC0C27F58045F85AE1C2D3C5A2.e.1115")>, <selenium.webdriver.remote.webelement.WebElement (session="64ed643e7238b84373cbe15434fea857", element="f.E85BC0BF6EF7962781DE8D1D691EECEC.d.AA5202AC0C27F58045F85AE1C2D3C5A2.e.1116")>, <selenium.webdriver.remote.webelement.WebElement (session="64ed643e7238b84373cbe15434fea857", element="f.E85BC0BF6EF7962781DE8D1D691EECEC.d.AA5202AC0C27F58045F85AE1C2D3C5A2.e.1117")>, <selenium.webdriver.remote.webelement.WebElement (session="64ed643e7238b84373cbe15434fea857", element="f.E85BC0BF6EF7962781DE8D1D691EECEC.d.AA5202AC0C27F58045F85AE1C2D3C5A2.e.1118")>, <selenium.webdriver.remote.webelement.WebElement (session="64ed643e7238b84373cbe15434fea857", element="f.E85BC0BF6EF7962781DE8D1D691EECEC.d.AA5202AC0C27F58045F85AE1C2D3C5A2.e.1119")>]
+INFO     pages.cart_page:cart_page.py:158 Удалён продукт Flash Bronzer Body Gel
+INFO     pages.cart_page:cart_page.py:158 Удалён продукт BeneFit Girl Meets Pearl
+INFO     pages.cart_page:cart_page.py:186 Ожидаемая итоговая сумма: 731.0 
+INFO     pages.cart_page:cart_page.py:188 Фактическая итоговая сумма: 731.0

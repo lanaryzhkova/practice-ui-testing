@@ -1,0 +1,10 @@
+INFO     pages.header_page:header_page.py:28 Поиск shirt
+INFO     pages.header_page:header_page.py:28 Поиск shirt
+INFO     pages.cart_page:cart_page.py:71 Найден самый дешёвый товар Fruit of the Loom T-Shirts 5 Pack - Super Premium
+- Size Medium($9.99)
+INFO     pages.cart_page:cart_page.py:197 Текущее количество товара Fruit of the Loom T-Shirts 5 Pack - Super Premium
+- Size Medium
+INFO     pages.cart_page:cart_page.py:97 Изменено количество товара Fruit of the Loom T-Shirts 5 Pack - Super Premium
+- Size Medium на 44
+INFO     pages.cart_page:cart_page.py:186 Ожидаемая итоговая сумма: 665.56 
+INFO     pages.cart_page:cart_page.py:188 Фактическая итоговая сумма: 665.56
