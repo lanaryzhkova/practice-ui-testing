@@ -24,7 +24,9 @@ class WaitHelper:
                                message=f"Элемент с локатором {locator} не найден")
     
     def wait_for_url(self, url: str):
+        from pages.base_page import BasePage
+        base_page = BasePage(self.driver)
         return self.wait.until(
             EC.url_to_be(url),
-            message=f"Ожидался URL {url}, но получен {self.driver.current_url}"
+            message=f"Ожидался URL {url}, но получен {base_page.get_current_url()}"
         )
