@@ -1,18 +1,20 @@
+import allure
+
 from pages.cart_page import CartPage
 from pages.header_page import HeaderPage
 from pages.main_page import MainPage
+from pages.product_page import ProductPage
+
 from data.data import SORTING_OPTIONS
 
-import allure
-
-from pages.product_page import ProductPage
 
 @allure.parent_suite("UI-тесты")
 @allure.feature("Поиск товаров и работа с корзиной")
 @allure.story("Поиск товаров, добавление в корзину и проверка итоговой суммы")
-@allure.title("Должна корректно формироваться корзина и рассчитываться итоговая сумма после поиска и изменения количества товаров")
-
+@allure.title("Должна корректно формироваться корзина и рассчитываться "
+              "итоговая сумма после поиска и изменения количества товаров")
 def test_cart_total_with_search(driver):
+    """Тест на добавление в корзину и проверку итоговой суммы"""
     main_page = MainPage(driver)
     product_page = ProductPage(driver)
     cart_page = CartPage(driver)
@@ -22,8 +24,11 @@ def test_cart_total_with_search(driver):
     header_page.search_for_product("shirt")
 
     main_page.select_sorting_option(SORTING_OPTIONS[1])
-    namesZA = main_page.get_product_names_in_category()
-    assert namesZA == sorted(main_page.get_product_names_in_category(), reverse=True), "Товары не отсортированы по имени от Z до A"
+    names_za = main_page.get_product_names_in_category()
+    assert names_za == sorted(main_page.get_product_names_in_category(),
+                              reverse=True), (
+        "Товары не отсортированы по имени от Z до A"
+    )
 
     main_page.click_product_by_position_in_category(2)
 
@@ -35,8 +40,11 @@ def test_cart_total_with_search(driver):
     header_page.search_for_product("shirt")
 
     main_page.select_sorting_option(SORTING_OPTIONS[1])
-    
-    assert namesZA == sorted(main_page.get_product_names_in_category(), reverse=True), "Товары не отсортированы по имени от Z до A"
+
+    assert names_za == sorted(main_page.get_product_names_in_category(),
+                              reverse=True), (
+        "Товары не отсортированы по имени от Z до A"
+    )
 
     main_page.click_product_by_position_in_category(3)
 
@@ -48,4 +56,7 @@ def test_cart_total_with_search(driver):
 
     calculated_total, cart_total = cart_page.get_cart_totals()
 
-    assert calculated_total == cart_total, f"Расчитанная сумма корзины {calculated_total} не совпадает с фактической суммой {cart_total}"
+    assert calculated_total == cart_total, (
+        f"Расчитанная сумма корзины {calculated_total} "
+        f"не совпадает с фактической суммой {cart_total}"
+    )
