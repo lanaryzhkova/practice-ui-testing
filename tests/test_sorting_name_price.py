@@ -1,6 +1,6 @@
-from pages.main_page.main_page import MainPage
-from pages.main_page.steps import Steps
+from pages.main_page import MainPage
 import allure
+from data.data import SORTING_OPTIONS
 
 @allure.parent_suite("UI-тесты")
 @allure.feature("Сортировка товаров")
@@ -9,22 +9,22 @@ import allure
 
 def test_sorting_by_name(driver):
     main_page = MainPage(driver)
-    steps = Steps()
-    steps.load_main_page(main_page)
-    steps.select_category(main_page)
 
-    namesAZ = steps.sort_by_name_az(main_page)
-    print("Полученные имена продуктов после сортировки A-Z:", namesAZ)  # Debug print
-    print("Ожидаемые имена продуктов после сортировки A-Z:", sorted(namesAZ))  # Debug print
+    main_page.open_main_page()
+    main_page.click_category("FRAGRANCE")
+
+    main_page.select_sorting_option(SORTING_OPTIONS[0])
+    namesAZ = main_page.get_product_names_in_category()
     assert namesAZ == sorted(namesAZ), "Товары не отсортированы по имени от A до Z"
 
-    namesZA = steps.sort_by_name_za(main_page)
-    print("Полученные имена продуктов после сортировки Z-A:", namesZA)  # Debug print
-    print("Ожидаемые имена продуктов после сортировки Z-A:", sorted(namesZA, reverse=True))  # Debug print
+    namesZA = main_page.select_sorting_option(SORTING_OPTIONS[1])
+    namesZA = main_page.get_product_names_in_category()
     assert namesZA == sorted(namesZA, reverse=True), "Товары не отсортированы по имени от Z до A"
 
-    pricesLH = steps.sort_by_price_low_high(main_page)
+    main_page.select_sorting_option(SORTING_OPTIONS[2])
+    pricesLH = main_page.get_product_prices_in_category()
     assert pricesLH == sorted(pricesLH), "Товары не отсортированы по цене от низкой к высокой"
 
-    pricesHL = steps.sort_by_price_high_low(main_page)
+    main_page.select_sorting_option(SORTING_OPTIONS[3])
+    pricesHL = main_page.get_product_prices_in_category()
     assert pricesHL == sorted(pricesHL, reverse=True), "Товары не отсортированы по цене от высокой к низкой"
