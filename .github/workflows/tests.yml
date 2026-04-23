@@ -3,7 +3,6 @@ name: Run Tests and Publish Allure Report
 on:
   push:
     branches: [ homework ]
-  pull_request:
 
 permissions:
   contents: write
@@ -24,7 +23,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: pip install pytest pytest-xdist allure-pytest
 
-      - run: pytest -n auto --alluredir=allure-results || true
+      - run: pytest -n 2 --alluredir=allure-results || true
 
       - run: |
           sudo apt-get update
