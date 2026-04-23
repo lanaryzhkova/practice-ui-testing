@@ -14,4 +14,5 @@ class HeaderPage(BasePage):
         return self
     
     def check_header_visible(self):
+        """Проверяет отображение поисковой строки"""
         return self.find_element(self.search_input)
