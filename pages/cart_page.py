@@ -42,7 +42,7 @@ class CartPage(BasePage):
     def open_cart_page(self) -> 'CartPage':
         """Открывает страницу корзины и ожидает загрузки URL"""
         self.open(CART_URL)
-        self.wait.wait_for_element_visible(self.products_list)
+        self.wait.wait_for_url(CART_URL)
         py_logger.info(f"Загружена страница {CART_URL}")
         return self
 
